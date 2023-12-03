@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Heading from "./Heading";
+import Question from "./Question";
+import Answer from "./Answer";
 
 export default function App(){
-    return <div className="header">
-        <img src="./images/icon-star.svg" alt="page-icon-star"/>
-        <h1>FAQs</h1>
 
+    return <div className="container">
+    <Heading/>
+    <Question src={"./images/icon-plus.svg"}/>
+    <Answer/>
     </div>
 }
