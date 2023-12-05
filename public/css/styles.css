@@ -1,6 +1,6 @@
 :root{
     --white:hsl(0, 0%, 100%);
-    --lightPink:hsl(275, 100%, 97%);
+    --lightPink:#f9f0ff55;
     --grayishPurple:hsl(292, 16%, 49%);
     --darkPurple: hsl(292, 42%, 14%);
 }
@@ -41,12 +41,25 @@ body{
 
 .question{
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    border-bottom: 1px solid black;
+
+}
+.question img{
+    width: 2rem;
+    cursor: pointer;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+div.question:last-of-type{
+    border-bottom: none;
 }
 h2{
     font-size: 1.2rem;
 }
-
 p{
     font-size: 1rem;
     color: var(--grayishPurple);
