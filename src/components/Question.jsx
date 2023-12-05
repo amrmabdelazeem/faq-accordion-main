@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-import QA from "../Q&A";
+import React, {useState} from "react";
 
-export default function Question({ id, onClick, question, answer }) {
+export default function Question({onClick, question}) {
+
   const [isClicked, setClicked] = useState(false);
 
   function handleClick() {
-    setClicked(!isClicked);
-    onClick(id, isClicked);
-    
+      setClicked(!isClicked);
   }
 
   return (
