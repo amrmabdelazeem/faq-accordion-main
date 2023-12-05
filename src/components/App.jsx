@@ -4,9 +4,7 @@ import Question from "./Question";
 import QA from "../Q&A";
 
 export default function App(){
-    function handleClickedComponent(clickedId, clickState){
-        console.log(clickedId);
-        console.log(clickState);  
+    function handleClickedComponent(clickedId, clickState){ 
     }
     
 

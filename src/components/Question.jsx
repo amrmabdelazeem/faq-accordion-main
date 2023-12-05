@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import QA from "../Q&A";
 
-export default function Question({ id, onClick, question }) {
+export default function Question({ id, onClick, question, answer }) {
   const [isClicked, setClicked] = useState(false);
 
   function handleClick() {
     setClicked(!isClicked);
     onClick(id, isClicked);
+    
   }
 
   return (
@@ -20,7 +21,7 @@ export default function Question({ id, onClick, question }) {
           alt={isClicked ? "minus-icon" : "plus-icon"}
         />
       </div>
-      <p style={{display: "none"}}>
+      <p style={{display: isClicked ? "block" : "none"}}>
         Frontend Mentor offers realistic coding challenges to help developers
         improve their frontend coding skills with projects in HTML, CSS, and
         JavaScript. It's suitable for all levels and ideal for portfolio
