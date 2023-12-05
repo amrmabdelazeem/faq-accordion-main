@@ -1,8 +1,9 @@
 :root{
     --white:hsl(0, 0%, 100%);
     --lightPink:#f9f0ff55;
-    --grayishPurple:hsl(292, 16%, 49%, 20%);
-    --darkPurple: hsl(292, 42%, 14%);
+    --grayishPurple:hsl(292, 16%, 49%, 30%);
+    --darkPurple: hsl(292, 42%, 14%, 50%);
+    --star:hsl(281, 83%, 54%);
 }
 
 body{
@@ -23,8 +24,8 @@ body{
 }
 
 .container{
-    margin: 0 1.2rem;
-    padding: 1rem 1.5rem;
+    margin: 10rem 1.2rem;
+    padding: .5rem 1.5rem;
     border-radius: 10px;
     background-color: var(--white);
     margin-top: 10rem;
@@ -41,7 +42,7 @@ body{
 .question{
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--grayishPurple);
 
 }
 .question img{
@@ -51,18 +52,24 @@ body{
 .top{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1rem;
+    padding-bottom: .5rem;
 }
 div.question:last-of-type{
     border-bottom: none;
 }
 h2{
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #000;
+}
+h2:hover{
+    cursor: pointer;
+    color: var(--star);
 }
 p{
     font-size: .9rem;
-    color: var(--grayishPurple);
-    padding-bottom: 1rem;
-    border-bottom: 2px solid var(--lightPink);
+    color: var(--darkPurple);
+    margin-top: 0;
+    padding-bottom: .5rem;
 }
 
