@@ -1,19 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import Heading from "./Heading";
 import Question from "./Question";
-import Answer from "./Answer";
+import QA from "../Q&A";
 
 export default function App(){
-    const [isClicked, setClicked] = useState(false);
-
-    function handleClick(){
-        document.getElementById("navigate").addEventListener("click", ()=>{
-            setClicked(!isClicked);
-        })
+    function handleClickedComponent(clickedId, clickState){
+        console.log(clickedId);
+        console.log(clickState);  
     }
+    
+
     return <div className="container">
     <Heading/>
-    <Question isOpen={isClicked} navigate={handleClick}/>
-    <Answer isOpen={isClicked}/>
+    {QA.map(x=> (
+        <Question 
+        key={x.id}
+        id = {x.id}
+        question = {x.question}
+        answer = {x.answer}
+        onClick={handleClickedComponent}/>
+    ))}
     </div>
 }
