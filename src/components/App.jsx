@@ -11,7 +11,7 @@ export default function App(){
             event.target.click();
         }
     })
-    return <div className="container">
+    return <main className="container">
     <Heading/>
     {QA.map((section, index)=> (
         <Question 
@@ -20,5 +20,5 @@ export default function App(){
         question = {section.question}
         />
     ))}
-    </div>
+    </main>
 }

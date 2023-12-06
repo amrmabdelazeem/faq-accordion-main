@@ -15,7 +15,6 @@ export default function Question({question, id}) {
       <div className="top">
         <h2>{question}</h2>
         <img
-          id="navigate"
           src={isClicked ? "./images/icon-minus.svg" : "./images/icon-plus.svg"}
           alt={isClicked ? "minus-icon" : "plus-icon"}
         />
