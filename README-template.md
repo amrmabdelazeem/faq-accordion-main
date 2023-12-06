@@ -46,12 +46,22 @@ Users should be able to:
 
 ## My process
 
+- Set up the project file locally.
+- run ```npx create-react-app``` then ```npm start``` in local console to create the react app.
+- Create the components, including Question component which will render each question as an individual component.
+- Add the content of the HTML file into an array of objects to access through the main app.
+- Use ```map()``` to generate each question component
+- Use hooks, internal styling and conditional rendering to control the answers.
+- Implemented CSS media queries to make it responsive.
+- Set the project to deploy on gh-pages.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Responsive design
 - [React](https://reactjs.org/) - JS library
 
 ### What I learned
@@ -76,5 +86,5 @@ I would like to continue learning more about React, specifically how to make it 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Github](https://github.com/amrmabdelazeem)
+- Frontend Mentor - [@amrmabdelazeem](https://www.frontendmentor.io/profile/amrmabdelazeem)
