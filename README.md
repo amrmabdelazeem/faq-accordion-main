@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/faq-accordion-with-reactjs-B2S9CeUo1A)
+- Live Site URL: [Github](https://amrmabdelazeem.github.io/faq-accordion-main)
 
 ## My process
 
