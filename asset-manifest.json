@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.a2d0c7db.js",
-    "index.html": "/index.html",
-    "main.a2d0c7db.js.map": "/static/js/main.a2d0c7db.js.map"
+    "main.js": "/faq-accordion-main/static/js/main.a2d0c7db.js",
+    "index.html": "/faq-accordion-main/index.html",
+    "main.a2d0c7db.js.map": "/faq-accordion-main/static/js/main.a2d0c7db.js.map"
   },
   "entrypoints": [
     "static/js/main.a2d0c7db.js"
