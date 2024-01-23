@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/faq-accordion-main/static/js/main.307270cb.js",
+    "main.js": "/faq-accordion-main/static/js/main.df218aab.js",
     "index.html": "/faq-accordion-main/index.html",
-    "main.307270cb.js.map": "/faq-accordion-main/static/js/main.307270cb.js.map"
+    "main.df218aab.js.map": "/faq-accordion-main/static/js/main.df218aab.js.map"
   },
   "entrypoints": [
-    "static/js/main.307270cb.js"
+    "static/js/main.df218aab.js"
   ]
 }
