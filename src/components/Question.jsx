@@ -1,17 +1,8 @@
-import React, {useState} from "react";
+export default function Question({question, id, onShow, isClicked}) {
 
-export default function Question({question, id}) {
-
-  const [isClicked, setClicked] = useState(false);
-
-  function handleClick() {
-      setClicked(preValue=>{
-        return !preValue;
-      });
-  }
 
   return (
-    <div className="question" tabIndex={0} onClick={handleClick}>
+    <div className="question" tabIndex={0} onClick={onShow}>
       <div className="top">
         <h2>{question}</h2>
         <img

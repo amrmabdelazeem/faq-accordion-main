@@ -1,10 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import Heading from "./Heading";
 import Question from "./Question";
 import QA from "../Q&A";
 
 export default function App(){
-
+    const [isClicked, setClicked] = useState(0);
 
     document.addEventListener("keydown", (event)=>{
         if(event.key === 'Enter' || event.key === ' '){
@@ -18,6 +18,8 @@ export default function App(){
         key={index}
         id = {index}
         question = {section.question}
+        isClicked = {isClicked === index}
+        onShow = {()=> setClicked(index)}
         />
     ))}
     </main>
